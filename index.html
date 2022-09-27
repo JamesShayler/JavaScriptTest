@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript test By James</title>
+    <script>function hideAll() {document.getElementById("demo", "Date", "myImage").style.display = "none";}</script>
+</head>
+<body>
+
+    <h2>James' JavaScript Demo</h2>
+    
+    <p id="demo">JavaScript can change HTML content.</p>
+    
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Is that not cool!"'>Click Me!</button>
+
+
+    <button onclick="document.getElementById('myImage').src='cat.jpg'">Cat</button>
+
+<img id="myImage" src="cat.jpg" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='dog.jpg'">Dog</button>
+<button onclick="document.getElementById('myImage').src='giraffe.jpg'">Giraffe</button>
+
+<button type="button"
+onclick="document.getElementById('Date').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="Date"></p>
+
+<button onclick="hideAll()">Hide All</button>
+    </body>
+</html>
